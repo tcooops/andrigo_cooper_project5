@@ -132,7 +132,6 @@ h4 {
 #main-header { /* important */
 	margin-bottom: 30px;
 	margin-top: 5px;
-	background-color: rbga(255, 255, 255, 0.8);
 }
 
 #main-nav { /* important */
@@ -605,7 +604,7 @@ footer {
 		grid-template-columns: repeat(1, 1fr); 
 		grid-gap: 40px;
 	/*	align-self: center;
-		align-content: center; */s
+		align-content: center; */
 	}
 
 	#recipes-grid p {
