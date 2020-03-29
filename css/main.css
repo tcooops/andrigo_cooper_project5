@@ -150,7 +150,6 @@ h4 {
 	margin-top: 30px; 
 }
 
-
 #burger-con.slide-toggle { /* important */ 
 	display: block;
 }
@@ -176,7 +175,15 @@ h4 {
 	color: #DA364F;
 	padding: 10px 0 10px 0;
 	text-align: center;
-} /*
+	font-size: 1em;
+} 
+
+#main-nav a:hover {
+	color: #194A8A;
+	text-transform: uppercase;
+	font-weight: 600;
+	cursor: pointer;
+}
 
 /* logo */
 
@@ -475,13 +482,13 @@ footer {
 @media screen and (max-width: 30em) { /* 480px */
 
 .main-heading h2 {
-		font-size: 1.125em !important; /* 18px */
+		font-size: 0.75em !important;
 		margin-top: 7px;
 	}
 
 .main-heading h3 {
 		color: #333;
-		font-size: 0.625em !important; /* 10px */
+		font-size: 0.625em !important; 
 		padding: 2px 0 10px 0;
 	}				
 
@@ -500,7 +507,6 @@ footer {
 	.hero {
 		display: none;
 	}
-	
 
 	.no-hero {
 		width: 100%;
@@ -577,12 +583,12 @@ footer {
 @media screen and (max-width: 61.875em) { /* 990px */
 
 	.main-heading h2 {
-		font-size: 1.5em;
+		font-size: 2em;
 		margin-top: 15px;
 	}
 
 	.main-heading h3 {
-		font-size: 1.175em;
+		font-size: 1.3em;
 	}
 
 	span {
@@ -635,10 +641,10 @@ footer {
 
 }
 
-
 @media screen and (min-width: 64em) { /* 1024px */
 
  	#main-header {
+ 		height: 75px;
  		display: flex;
  	}
 
@@ -666,6 +672,7 @@ footer {
 
     #main-nav {
     	font-size: 1.5em;
+    	margin-right: 100px;
     }
 
     #main-nav li {
@@ -700,12 +707,13 @@ footer {
     }
 
     #main-logo {
-     	margin-left: 20px;
+     	margin-left: 100px;
      	/*margin-top: 20px; */
      	max-width: 160px;
      	z-index: 3;
+     	position: relative;
+     	padding-top: 10px;
     }
-
 
     /** end header **/
 
