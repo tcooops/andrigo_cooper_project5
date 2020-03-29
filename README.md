@@ -10,7 +10,7 @@ HTML\
 CSS\
 JavaScript
 
-### Installation, etc
+### Installation
 CD to the location of your choice, and then git clone. 
 
 ### License
@@ -19,7 +19,6 @@ MIT
 ### Authors
 Tessa Benton-Cooper\
 Jordan Andrigo\
-\
 \
 \
 March 2020
