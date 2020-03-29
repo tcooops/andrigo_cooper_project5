@@ -324,7 +324,6 @@ span {
 /*** footer ***/
 
 footer {
-	position: fixed;
 	bottom: 0;
 	width: 100%;
 }
@@ -428,53 +427,6 @@ footer {
 #copyright p {
 	padding: 3px;
 }
-
-/*
-
-#back-button {
-	font-family: rift, helvetica, arial, sans-serif;
-	font-size: 0.8em;
-	align-self: center;
-	text-align: 
-	padding: 5px;
-	color: #DA364F;
-	font-weight: 500;
-	font-style: italic;
-	height: 45px;
-	border-radius: 10px;
-	text-align: center;
-	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e2e2e2+100 
-	background: rgb(255,255,255); 
-	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(226,226,226,1) 100%); 
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(226,226,226,1) 100%);
-	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(226,226,226,1) 100%); 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e2e2e2',GradientType=0 ); 
-}
-
-#back-button:hover {
-	color: #194A8A;
-	cursor: pointer;
-	-webkit-transition: all 0.5s ease-in-out 0s;
-	-moz-transition: all 0.5s ease-in-out 0s;
-	-o-transition: all 0.5s ease-in-out 0s;
-	transition: all 0.5s ease-in-out 0s;
-}
-
-#back-button:active {
-	margin-top: 10px;
-}
-
-.shadow:hover {
-   position: relative; 
-   top: -3px; 
-   left: -3px; 
-   text-shadow: 1px 1px #fe4902, 
-                2px 2px #fe4902, 
-                3px 3px #fe4902, 
-                4px 4px #fe4902;
-}
-
-*/
 
 /*=*=*=*=*=*=*=*=*=*=*=*=* RESPONSIVE MOBILE *=*=*=*=*=*=*=*=*=*=*=*=*/
 
@@ -643,7 +595,7 @@ footer {
 @media screen and (min-width: 64em) { /* 1024px */
 
  	#main-header {
- 		height: 75px;
+ 		height: 50px;
  		display: flex;
  	}
 
@@ -804,7 +756,7 @@ footer {
 	}
 
 	.main-footer {
-		height: 100px;
+		height: 130px;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
