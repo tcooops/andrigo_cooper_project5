@@ -127,116 +127,66 @@ h4 {
 	padding: 30px;
 }
 
-/* Header and Nav */
+/*** main header ***/
 
-#main-header {
-  margin-bottom: 20px;
-  margin-top: 5px;
+#main-header { /* important */
+	margin-bottom: 30px;
+	margin-top: 5px;
+	background-color: rbga(255, 255, 255, 0.8);
 }
 
-/* we want to push burger menu all the way to the right */
-
-#main-nav {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+#main-nav { /* important */
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
 }
 
-#main-nav button {
-  /* push it to the right. We do this with the margin below */
-  margin-left: auto;
+#main-nav button { /* important */
+	margin: 0 auto;
 }
 
-#search-con {
-  /* get search boxes to display side by side */
-  display: flex;
-  flex-direction: row;
-}
-
-#main-nav input[type=text] {
-  display: block;
-  width: 100%;
-  height: 40px;
-  padding: 5px;
-  border: 1px solid #cacaca;
-  border-radius: 3px 0px 0px 3px;
-  background-color: #fefefe;
-  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
-  line-height: 1.5;
-  color: #0a0a0a;
-}
-
-#main-nav input[type=submit] {
-  height: 40px;
-  width: 100px;
-  border: 1px solid transparent;
-  border-radius: 0px 3px 3px 0px;
-  font-size: 0.75em;
-  line-height: 1;
-  text-align: center;
-  cursor: pointer;
-  background-color: #8fa771;
-  color: #fefefe;
-}
-
-#burger-con {
-  display: none; /* hide initially */
-  margin-top: 20px; /* this bumps the menu below 3 lines */
+#burger-con { /* important */
+	display: none; /* hide initially */
+	margin-top: 30px; 
 }
 
 
-#burger-con.slide-toggle { /* these are important for js */ 
-  display: block;
+#burger-con.slide-toggle { /* important */ 
+	display: block;
 }
 
-#main-nav button {
-  background: url(../img/burger.svg) center no-repeat;
-  border: 0px;
-  width: 20px;
-  height: 20px;
-  transition: all 400ms ease;
+#main-nav button { /* important */
+	background: url(../images/burger.svg) center no-repeat;
+	border: 0px;
+	width: 20px;
+	height: 20px;
+	transition: all 400ms ease;
 }
 
-#main-nav button.expanded {
-  transform: rotate(90deg);
+#main-nav button.expanded {  /* important */
+	margin-bottom: 20px;
+	transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
 }
 
-#main-nav li a {
-  /* ancor tags are inline by default, set to block so we can add the padding */
-  display: block;
-  color: #8ea76d;
-  padding: 10px 0 10px 0;
-  text-align: center;
-}
-
-#main-nav li {
-  border-bottom: 1px solid #efefef;
-}
-
-#main-nav li:first-child {
-  border-top: 1px solid #efefef;
-}
-
-#main-nav li:last-child {
-  margin-bottom: 10px;
-}
-
-#main-nav li a:hover {
-  background-color: #efefef;
-}
-
-#search-form {
-  margin-top: 20px;
-}
+#main-nav li a { /* what shows in burger menu*/
+	font-family: rift, helvetica, arial, sans-serif;
+	display: block;
+	color: #DA364F;
+	padding: 10px 0 10px 0;
+	text-align: center;
+} /*
 
 /* logo */
 
-#wollaston-logo {
-  display: block;
-  max-width: 120px; /* we cannot go beyond this size. It will ONLY grow to this set size. This is dictated by the design of the logo and should be found in your build notes */
-  margin: 0 auto;
+#main-logo {
+	z-index: 3;
+	background-color: #fff; 
+	border-radius: 100%;
+	display: block;
+	max-width: 140px; /* we cannot go beyond this size. It will ONLY grow to this set size. This is dictated by the design of the logo and should be found in your build notes */
+	margin: 0 auto; 
 }
 
 
@@ -688,81 +638,72 @@ footer {
 
 @media screen and (min-width: 64em) { /* 1024px */
 
- 	    #main-header {
-      display: flex;
-      margin-top: 20px;
-    }
+ 	#main-header {
+ 		display: flex;
+ 	}
 
     #button {
-      display: none;
+    	display: none;
     }
 
     #burger-con {
-      /* display: block; */
       display: flex;
       flex-direction: column;
       margin: 0;
     }
 
     #main-nav {
-      text-align: right;
-      text-transform: uppercase;
-      font-size: 0.875em;
-      margin-left: auto;
+    	text-align: right;
+    	text-transform: uppercase;
+    	font-size: 0.875em;
+    	margin-left: auto;
+    	margin-top: 20px;
     }
 
     #burger-menu {
-      text-align: right;
+    	text-align: right;
+    }
+
+    #main-nav {
+    	font-size: 1.5em;
     }
 
     #main-nav li {
-      border-bottom: none;
-      display: inline;
-      margin-left: 20px;
+    	border-bottom: none;
+    	display: inline;
+    	margin-left: 20px;
     }
     
     #main-nav li a {
-      background-color: #fff;
-      display: inline;
-      padding: 5px 0 5px 0;
-      text-decoration: none;
-      color: #6d6d6c;
+    	font-family: rift, helvetica, arial, sans-serif;
+    	background-color: transparent;
+    	display: inline;
+    	padding: 5px 0 5px 0;
+    	text-decoration: none;
+    	color: #333;
     }
 
-    #main-nav li a:hover {
-      color: #8fa771;
-      border-bottom: 3px solid #8fa771;
-      padding-bottom: 5px;
-      background-color: transparent;
-    }
-
-    #main-nav li:first-child {
-      border-top: none;
+    #main-nav a:hover {
+		color: #194A8A;
+		text-transform: uppercase;
+		border-bottom: 3px solid #da364f;
+		font-weight: 600;
+		cursor: pointer;
     }
 
     #main-nav li:last-child {
-      margin-bottom: 0;
-    }
-
-    #search-form {
-      width: 97%;
-      order: -1;
-      margin-left: auto;
-      margin-bottom: 50px;
-      margin-top: 0;
+    	margin-bottom: 0;
     }
 
     #logo-con {
-      order: -1;
+    	order: -1;
     }
 
     #main-logo {
-      /*margin-top: 20px; */
-      max-width: 160px;
-      /* position: absolute;
-      top: 10px;
-      left: 10px; */
-      /* order: -1; */
+     	margin-left: 20px;
+     	/*margin-top: 20px; */
+     	max-width: 160px;
+     	z-index: 3;
     }
 
 
